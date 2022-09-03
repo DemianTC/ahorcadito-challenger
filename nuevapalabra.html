@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title >Ahorcadito</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+
+          <header>
+             <h1>Ahorcadito</h1>
+          </header>
+
+           
+        <main>
+            <img id="nueva" src="imagenes/esc.gif" alt="Nueva-palabra">
+            <div>
+               
+                <label for="domTextElemnt">*No se aceptan Mayusculas, caracteres y numeros</label>
+             
+                <input type="text" id="domTextElemnt" pattern="[a-z]{1,7}" name="" value=""  class="input-anexar-palabra"></input>
+               <p></p>
+                
+                <button type="button" onclick="getValueImput( )" id="guardar" name="button">Guardar Palabra</button>
+                
+                <a href="index.html"><button id="palabra-nueva">Regresar al juego</button> </a>
+                <p id="valueInput"></p>
+           </div> 
+           
+           
+    
+          
+        </main>
+
+        <script src="juego.js"></script>
+        
+    </body>
+ 
+
+</html>
