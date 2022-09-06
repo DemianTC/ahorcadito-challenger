@@ -3,7 +3,7 @@ body{
     background: url(imagenes/fondo.jpg) no-repeat center;
     background-size: auto;
     font-family: "montserrat", Arial, Helvetica, sans-serif;
-    min-height: 60%;
+    min-height: 80%;
 }
 
 header{
@@ -28,11 +28,15 @@ main{
 }
 
 #imagen{
-    width: 80px;
+    width: 150px;
+    margin: auto;
+    padding: 2px;
 }
 
 #palabra_a_adivinar{
     height: 3em;
+    font-size: 2.5rem;
+    text-transform:uppercase ;
 }
 #palabra_a_adivinar span{
     vertical-align: bottom;
@@ -45,6 +49,7 @@ main{
 }
 
 #letras{
+    
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -52,10 +57,14 @@ main{
 }
 
 #letras button{
-    width: 28px;
+    
+    width: 35px;
     padding: 6px;
     text-align: center;
     cursor: pointer;
+    color: rgb(221, 24, 172);
+    border-radius: 15px;
+    
  }
 
  #jugar{
@@ -80,6 +89,8 @@ main{
     padding: 15px;
     height: 80px;
     margin-top: 30px;
+    text-transform:uppercase
+    
 }
 
 #resultado{
@@ -102,6 +113,13 @@ main{
  }
 
  @media screen and (max-width:480px){
+
+ 
+
+    #letras button{
+        width: 28%;
+
+    }
 
     .input-anexar-palabra{
         width: 50%;

@@ -24,9 +24,12 @@
             <img id="nueva" src="imagenes/esc.gif" alt="Nueva-palabra">
             <div>
                
-                <label for="domTextElemnt">*No se aceptan Mayusculas, caracteres y numeros</label>
+                <label for="domTextElemnt">*No se aceptan minusculas, caracteres y numeros</label>
+
              
-                <input type="text" id="domTextElemnt" pattern="[a-z]{1,7}" name="" value=""  class="input-anexar-palabra"></input>
+             
+                <input  type="text" maxlength="10" name="documento" id="documento"    
+                required autocomplete="off" onkeypress="return (event.charCode != 47 || (event.charCode >= 65,97 && event.charCode <= 90,122) )" min="1" class="input-anexar-palabra"></input>
                <p></p>
                 
                 <button type="button" onclick="getValueImput( )" id="guardar" name="button">Guardar Palabra</button>
